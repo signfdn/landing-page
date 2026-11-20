@@ -108,6 +108,21 @@
     color: var(--muted);
   }
 
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px 24px;
+  }
+
+  .contact {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color .3s;
+  }
+
+  .contact:hover, .contact:focus-visible { color: var(--accent); }
+
   main > * { animation: in 1.6s cubic-bezier(.2,.8,.2,1) both; }
   main > :nth-child(2) { animation-delay: .4s; }
   main > :nth-child(3) { animation-delay: .8s; }
@@ -129,6 +144,9 @@
     <p class="mission">The mission of <span class="name">Sign Foundation</span> is both ideological and technological:<br class="wide"> to build infrastructure for sovereign individuals, from identity and money to services and community.</p>
   </main>
 
-  <footer class="label">&copy; 2026 Sign Foundation</footer>
+  <footer class="label">
+    <span>&copy; 2026 Sign Foundation</span>
+    <a class="contact" href="mailto:info@signfoundation.org">Contact Us</a>
+  </footer>
 </body>
 </html>
